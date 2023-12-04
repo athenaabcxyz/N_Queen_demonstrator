@@ -1,0 +1,16 @@
+D:\Work\GitHub\NQueen\NQueens\bin\Debug\net6.0-windows\NQueens.exe
+D:\Work\GitHub\NQueen\NQueens\bin\Debug\net6.0-windows\NQueens.deps.json
+D:\Work\GitHub\NQueen\NQueens\bin\Debug\net6.0-windows\NQueens.runtimeconfig.json
+D:\Work\GitHub\NQueen\NQueens\bin\Debug\net6.0-windows\NQueens.dll
+D:\Work\GitHub\NQueen\NQueens\bin\Debug\net6.0-windows\NQueens.pdb
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.Form1.resources
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.csproj.GenerateResource.cache
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.AssemblyInfoInputs.cache
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.AssemblyInfo.cs
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.csproj.CoreCompileInputs.cache
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.dll
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\refint\NQueens.dll
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.pdb
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\NQueens.genruntimeconfig.cache
+D:\Work\GitHub\NQueen\NQueens\obj\Debug\net6.0-windows\ref\NQueens.dll
