@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\GitHub\\NQueen\\NQueens\\NQueens.csproj",
+      "projectUniqueName": "D:\\Work\\GitHub\\N_Queen_demonstrator\\NQueens\\NQueens.csproj",
       "projectName": "NQueens",
-      "projectPath": "D:\\Work\\GitHub\\NQueen\\NQueens\\NQueens.csproj",
+      "projectPath": "D:\\Work\\GitHub\\N_Queen_demonstrator\\NQueens\\NQueens.csproj",
       "packagesPath": "C:\\Users\\athen\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\GitHub\\NQueen\\NQueens\\obj\\",
+      "outputPath": "D:\\Work\\GitHub\\N_Queen_demonstrator\\NQueens\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

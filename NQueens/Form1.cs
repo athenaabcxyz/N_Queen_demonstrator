@@ -5,15 +5,25 @@ namespace NQueens
         ChessZone[,] board;
         int queens = 0;
         int queensPlaced = 0;
+        List<int[,]> solutions;
         public Form1()
         {
             InitializeComponent();
             queens = Convert.ToInt32(numericUpDown_queen.Value);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+
         }
 
         private void button_loadBoard_Click(object sender, EventArgs e)
         {
             this.panel1.Controls.Clear();
+            if(queens!=Convert.ToInt32(numericUpDown_queen.Value))
+            {
+                comboBox1.Items.Clear();
+                queens = Convert.ToInt32(numericUpDown_queen.Value);
+            }
+
             board = new ChessZone[queens, queens];
             for (int i = 0; i < queens; i++)
             {
@@ -23,7 +33,7 @@ namespace NQueens
                     board[i, j].rows = i;
                     board[i, j].columns = j;
                     board[i, j].zone.Size = new Size(30, 30);
-                    board[i, j].zone.Location = new Point(3 + (i * 30), 3 + (j *30));
+                    board[i, j].zone.Location = new Point(3 + (i * 30), 3 + (j * 30));
                     board[i, j].zone.FlatStyle = FlatStyle.Flat;
                     board[i, j].zone.Text = "";
                     board[i, j].zone.BackColor = Color.White;
@@ -143,11 +153,6 @@ namespace NQueens
             }
         }
 
-        private void numericUpDown_queen_ValueChanged(object sender, EventArgs e)
-        {
-            queens = Convert.ToInt32(numericUpDown_queen.Value);
-        }
-
         private void button_validate_Click(object sender, EventArgs e)
         {
             if (queens == queensPlaced)
@@ -157,6 +162,42 @@ namespace NQueens
             else
             {
                 MessageBox.Show("Problem unsolved");
+            }
+        }
+
+        private void button_solve_Click(object sender, EventArgs e)
+        {
+            NQueenSolver solver = new NQueenSolver(queens);
+            solutions = solver.solve(queens);
+            comboBox1.Items.Clear();
+            for (int i = 0; i < solutions.Count; i++)
+            {
+                comboBox1.Items.Add("Solution " + (i+1));
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text != "")
+            {
+                if (solutions.Count > 0)
+                {
+                    if (solutions[comboBox1.SelectedIndex] != null)
+                    {
+                        button_loadBoard.PerformClick();
+                        for (int i = 0; i < queens;i++)
+                        {
+                            for(int j = 0; j < queens;j++)
+                            {
+                                if (solutions[comboBox1.SelectedIndex][i,j]==1)
+                                {
+                                    board[i,j].zone.BackColor = Color.Green;
+                                }
+                            }
+                        }
+                        BoardAutoFixing();
+                    }
+                }
             }
         }
     }
